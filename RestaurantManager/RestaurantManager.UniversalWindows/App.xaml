@@ -11,5 +11,8 @@
         <Style TargetType="TextBlock">
             <Setter Property="FontSize" Value="32" />
         </Style>
+        <Style TargetType="ToggleSwitch">
+            <Setter Property="FontSize" Value="32" />
+        </Style>
     </Application.Resources>
 </Application>

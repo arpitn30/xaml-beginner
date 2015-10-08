@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Light">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Dark">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.2*"/>
             <RowDefinition Height="0.1*"/>
@@ -22,7 +22,14 @@
         </Grid.ColumnDefinitions>
         <TextBlock Text="Special Request" Grid.Row="1" Grid.Column="1"/>
         <TextBlock Text="Order Items:" Grid.Row="1" Grid.Column="2"/>
-        <TextBlock Text="**Add to Order**" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center"/>
-        <TextBlock Text="**Submit Order**" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+        <Button Content="Add to Order" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center"/>
+        <Button Content="Submit Order" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+        <ListView Grid.Row="1" Grid.Column="0" Grid.RowSpan="3" Background="Aqua"/>
+        <ListView Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" Background="Orange"/>
     </Grid>
+    <Page.TopAppBar>
+        <AppBar>
+            <AppBarButton Icon="Home" Label="Home" Click="Backtohome" RequestedTheme="Dark"/>
+        </AppBar>
+    </Page.TopAppBar>
 </Page>
